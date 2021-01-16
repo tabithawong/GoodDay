@@ -23,6 +23,11 @@ h2 {
     font-family: 'Yusei Magic', sans-serif;
 }
 
+hr {
+    border-style: dotted none none none;
+    border-width: 7px;
+}
+
 /* CLASS SELECTORS */
 
 /* ID SELECTORS */
