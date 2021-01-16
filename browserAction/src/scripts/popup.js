@@ -13,4 +13,26 @@ function fireContentScript() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('clickMe').addEventListener("click", isFrogHidden)
     document.getElementById('fireContentScript').addEventListener("click", fireContentScript)
+    document.getElementById('button').addEventListener("click", addImages)
 })
+
+
+
+function addImages() {
+    var url = "https://source.unsplash.com/150x150?";
+    // var img = document.createElement("img");
+    // img.src = url;
+    // document.body.appendChild(img);
+    var input = document.getElementById("forPhoto").value;
+    console.log(input);
+
+    console.log(url+input)
+    
+
+    var imgSrc = url + input;
+    
+
+    let img = document.getElementById('newPhoto');
+
+    img.src = imgSrc;
+}
