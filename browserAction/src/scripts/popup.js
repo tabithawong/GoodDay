@@ -114,13 +114,75 @@ document.body.onload = function() {
     function generateImages(userPreference) {
 
         console.log(userPreference + "this is it")
+    
+        const numbers = [0, 1, 2, 3, 4];
+  
+        console.log(numbers)
+        const positionNum = Math.floor(Math.random() * numbers.length)
+        const randomNum = numbers[positionNum];
+        //quotes[quotes_i];
+        numbers.splice(positionNum, 1)
+        console.log(numbers)
+
+
+        const postitionNum1 = Math.floor(Math.random() * numbers.length);
+        const randomNum1 = numbers[postitionNum1];
+        // numbers.remove(randomNum1);
+        // delete numbers[randomNum1]
+        numbers.splice(postitionNum1, 1)
+        console.log(numbers)
+
+
+        const positionNum2 = Math.floor(Math.random() * numbers.length)
+        const randomNum2 = numbers[positionNum2];
+        numbers.splice(positionNum2, 1);
+        // // numbers.remove(randomNum2);
+        // delete numbers[randomNum2]
+        console.log(numbers);
+        
+        console.log(positionNum);
+        console.log(postitionNum1);
+        console.log(positionNum2);
+
+        // const randomNum = Math.floor(Math.random() * 5) + 1;
+        // const randomNum1 = Math.floor(Math.random() * 5) + 1;
+        // const randomNum2 = Math.floor(Math.random() * 5) + 1;
         if (userPreference.length == 3) {
-            console.log("This is working");
-            img1.src = "./images/animals/a1.jpg";
-            img2.src = "./images/nature/n1.jpg";
-            img3.src = "./images/study/s1.jpg";
-        } else if (userPreference.includes("animals")) {
-            console.log("this is animals")
+     
+           
+            img1.src = "./images/animals/a" + randomNum + ".jpg";
+            img2.src = "./images/nature/n" + randomNum + ".jpg";
+            img3.src = "./images/study/s" + randomNum + ".jpg";
+        } else if (userPreference.length == 2) {
+          
+            if (userPreference.includes("animals") && userPreference.includes("nature")){
+                img1.src = "./images/animals/a" + randomNum + ".jpg";
+                img2.src = "./images/nature/n" + randomNum + ".jpg";
+                img3.src =  "./images/animals/a" + randomNum1 + ".jpg";
+            } else if (userPreference.includes("animals") && userPreference.includes("study")){
+                img1.src = "./images/animals/a" + randomNum + ".jpg";
+                img2.src = "./images/study/s" + randomNum1 + ".jpg";
+                img3.src = "./images/animals/a" + randomNum1 + ".jpg";
+            } else {
+                img1.src = "./images/animals/a" + randomNum + ".jpg";
+                img2.src = "./images/study/s" + randomNum1 + ".jpg";
+                img3.src = "./images/animals/a" + randomNum1 + ".jpg";
+            }
+         
+        } else {
+            if (userPreference.includes("animals")) {
+                img1.src = "./images/animals/a" + randomNum + ".jpg";
+                img2.src = "./images/animals/a" + randomNum1 + ".jpg";
+                img3.src = "./images/animals/a" + randomNum2 + ".jpg";
+            } else if (userPreference.includes("nature")) {
+                img1.src = "./images/nature/n"+ randomNum + ".jpg";
+                img2.src = "./images/nature/n" + randomNum1 + ".jpg";
+                img3.src = "./images/nature/n" + randomNum2 + ".jpg";
+            } else {
+                img1.src = "./images/study/s" + randomNum + ".jpg";
+                img2.src = "./images/study/s" + randomNum1 + ".jpg";
+                img3.src = "./images/study/s" + randomNum2 + ".jpg";
+            }
         }
 
     }
