@@ -1,13 +1,20 @@
 /* TAG SELECTORS */
 body {
     background-color: #d7fffd;
+    text-align: center;
 }
 
 h1 {
+    border-color: #e4d0d5;
+    border-style: dashed;
+    border-radius: 7px;
+    border-width: 3px;
     color: #5DCDC9;
     font-weight: lighter;
     font-family: 'Pacifico', cursive;
-    text-align: right;
+    margin-top: 15%;
+    padding: 3px;
+    text-align: center;
 }
 
 h2 {
@@ -19,8 +26,10 @@ h2 {
 /* CLASS SELECTORS */
 
 /* ID SELECTORS */
+
 #app {
     width: 200px;
+    margin: auto;
 }
 
 #frog {
@@ -37,3 +46,8 @@ body {
 li:hover {
     text-decoration: line-through;
   }
+
+
+ul {
+    text-align: left;
+}
