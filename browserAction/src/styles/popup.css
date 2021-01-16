@@ -102,3 +102,20 @@ ul {
     width: 35px;
     
 }
+
+.btn {
+    border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  background: #5da4cd;
+  padding: 5px 10px 5px 10px;
+  margin: 20px auto;
+  border: solid #e4d0d5 2px;
+  text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #6abae6;
+    text-decoration: none;
+  }
