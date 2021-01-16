@@ -14,6 +14,7 @@ function fireContentScript() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("checkboxImg").addEventListener('click', checkCheckbox)
     document.getElementById('button').addEventListener("click", addImages)
+    document.getElementById("buttonPreference").addEventListener("click", openForm)
 })
 
 // array of quotes
@@ -65,7 +66,16 @@ document.body.onload = function() {
 
         const toggleCheckbox = items.disappearCheckbox;
         console.log(toggleCheckbox)
+        if (toggleCheckbox) {
+            document.getElementById("formForPhotos").style.display = "none";
+            document.getElementById("buttonPreference").style.display = "block";
+        }
     })
+  }
+
+  function openForm() {
+    document.getElementById("formForPhotos").style.display = "block";
+    document.getElementById("buttonPreference").style.display = "none";
   }
 
 
@@ -104,9 +114,11 @@ document.body.onload = function() {
     function generateImages(userPreference) {
 
         console.log(userPreference + "this is it")
-        if (userPreference.includes("nature")) {
+        if (userPreference.length == 3) {
             console.log("This is working");
-            img1.src = "./images/frog.jpg";
+            img1.src = "./images/animals/a1.jpg";
+            img2.src = "./images/nature/n1.jpg";
+            img3.src = "./images/study/s1.jpg";
         } else if (userPreference.includes("animals")) {
             console.log("this is animals")
         }
