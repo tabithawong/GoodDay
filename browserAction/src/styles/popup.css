@@ -8,7 +8,7 @@ h1 {
     color: #5DCDC9;
     font-weight: lighter;
     font-family: 'Pacifico', cursive;
-    text-align: right;
+    text-align: center;
 }
 
 h2 {
@@ -21,6 +21,10 @@ h2 {
 
 /* ID SELECTORS */
 
+#app {
+    width: 200px;
+    margin: auto;
+}
 
 #frog {
     display: none;
