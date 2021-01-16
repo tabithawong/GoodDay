@@ -23,6 +23,18 @@ h2 {
     font-family: 'Yusei Magic', sans-serif;
 }
 
+hr {
+    border-color: #e4d0d5;
+    border-style: dotted none none none;
+    border-width: 7px;
+    margin-bottom: 20px;
+    width: 25%;
+}
+
+p {
+    font-family: 'Yusei Magic', sans-serif;
+}
+
 /* CLASS SELECTORS */
 
 /* ID SELECTORS */
@@ -40,6 +52,11 @@ body {
     width: 300px;
 }
 
+input {
+    border: transparent;
+    background-color: #ffc;
+}
+
 li:hover {
     text-decoration: line-through;
   }
@@ -47,4 +64,13 @@ li:hover {
 
 ul {
     text-align: left;
+    position: absolute;
+}
+
+.generate {
+   
+}
+
+.todo{
+    position: relative;
 }
