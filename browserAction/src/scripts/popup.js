@@ -22,7 +22,7 @@ function changeQuote() {
         "Rest your eyes for 10 seconds!", "Go for a walk and enjoy some sunlight!", "Today's a good day! :)", "Listen to your favourite song!", "Take a break from the screen!"];
     var newquote = quotes[getRandomInt(9)];
     var quote = document.getElementById("quote");
-    quote.firstChild.nodeValue=newquote; 
+    quote.value=newquote; 
 }
 
 document.addEventListener('DOMContentLoaded', function() {
