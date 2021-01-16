@@ -11,7 +11,7 @@ function fireContentScript() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("checkboxImg").addEventListener('click', checkCheckbox)
+    
 function getRandomInt() {
     return Math.floor(Math.random() * Math.floor(max)); 
   }
@@ -26,8 +26,9 @@ function changeQuote() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('clickMe').addEventListener("click", isFrogHidden)
-    document.getElementById('fireContentScript').addEventListener("click", fireContentScript)
+    
+
+    document.getElementById("checkboxImg").addEventListener('click', checkCheckbox)
     document.getElementById('button').addEventListener("click", addImages)
     document.getElementById('qbutton').addEventListener("click", changeQuote)
 })
