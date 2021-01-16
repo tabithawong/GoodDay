@@ -56,7 +56,7 @@ input:focus {
 a { font-size: 1.4em; }
 
 body {
-    height: 400px;
+    height: 450px;
     width: 300px;
 }
 
@@ -70,21 +70,35 @@ li:hover {
 
 
 ul {
+    background-color: #ffc;
+    font-family: 'Yusei Magic', sans-serif;
     text-align: left;
-    position: fixed;
-    top: 270px;
+    margin: auto auto auto 15px;
+    
 }
 
 .generate {
+   width: 100%;
    
 }
 
 .to-do-section {
-    background-image: "./images/stickynote.jpg";
+    
+    background-color: #ffc;
+    height: 170px;
+    width: 100%;
 }
 
 #todo {
     background-color: #ffc;
     font-family: 'Yusei Magic', sans-serif;
-    position: absolute;
+    margin: 5px auto auto auto;
+    
+}
+
+.sticky-note-img {
+    float: left;
+    height: 35px;
+    width: 35px;
+    
 }
