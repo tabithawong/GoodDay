@@ -79,6 +79,10 @@ ul {
    
 }
 
+.to-do-section {
+    background-image: "./images/stickynote.jpg";
+}
+
 #todo {
     background-color: #ffc;
     font-family: 'Yusei Magic', sans-serif;
