@@ -45,12 +45,36 @@ function addImages() {
     img.src = imgSrc;
 }
 
+document.body.onload = function() {
+    chrome.storage.sync.get("userCheckbox", function(items) {
+      if (!chrome.runtime.error) {
+    
+        if (items.userCheckbox.length > 0) {
+            console.log(items.userCheckbox);
+            generateImages(items.userCheckbox);
+        } else {
+            console.log("sorry bud")
+        }
+        // console.log(items);
+        document.getElementById("data").innerText = items.data;
 
+      }
+    });
+
+    chrome.storage.sync.get("disappearCheckbox", function(items) {
+
+        const toggleCheckbox = items.disappearCheckbox;
+        console.log(toggleCheckbox)
+    })
+  }
 
 
     var checkboxes = document.querySelectorAll("input[type=checkbox][name=settings]");
     let enabledSettings = []
-    
+    const img1 = document.getElementById("checkboxImg1");
+    const img2 = document.getElementById("checkboxImg2");
+    const img3 = document.getElementById("checkboxImg3");
+
     function checkCheckbox() {
         // checkboxes.forEach(function(checkbox) {
             enabledSettings = 
@@ -59,20 +83,37 @@ function addImages() {
                 .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
                 
               console.log(enabledSettings)
-            const img1 = document.getElementById("checkboxImg1");
-            const img2 = document.getElementById("checkboxImg2");
-            const img3 = document.getElementById("checkboxImg3");
+           
 
-            if (enabledSettings.includes("nature")) {
-                console.log("This is working")
-            } else if (enabledSettings.includes("animals")) {
-                console.log("this is animals")
-            }
-
-            img1.src = "./images/frog.jpg"
+              generateImages(enabledSettings);
+          
+           
         //   });
+
+        chrome.storage.sync.set({'userCheckbox': enabledSettings}, function() {
+            // Notify that we saved.
+            console.log('Settings saved');
+          });
+          chrome.storage.sync.set({'disappearCheckbox': true}, function() {
+            // Notify that we saved.
+            console.log('toggleCheckbox saved');
+          });
     }
-    
+
+
+    function generateImages(userPreference) {
+
+        console.log(userPreference + "this is it")
+        if (userPreference.includes("nature")) {
+            console.log("This is working");
+            img1.src = "./images/frog.jpg";
+        } else if (userPreference.includes("animals")) {
+            console.log("this is animals")
+        }
+
+    }
+
+
 function newItem() {
     var item = document.getElementById("input").value;
     var ul = document.getElementById("list");
