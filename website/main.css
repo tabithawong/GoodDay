@@ -1,0 +1,27 @@
+body {
+    background-color: #e0f8ff;
+    text-align: center;
+}
+
+h1 {
+    border-color: #e4d0d5;
+    border-style: dashed;
+    border-radius: 7px;
+    border-width: 3px;
+    color: #5da4cd;
+    font-weight: lighter;
+    font-family: 'Pacifico', cursive;
+    margin-top: 15%;
+    padding: 3px;
+    text-align: center;
+}
+
+h2 {
+    color: #5da4cd;
+    font-weight: lighter;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+p {
+    color:black;
+}

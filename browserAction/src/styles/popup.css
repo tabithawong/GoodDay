@@ -70,21 +70,52 @@ li:hover {
 
 
 ul {
+    background-color: #ffc;
+    font-family: 'Yusei Magic', sans-serif;
     text-align: left;
-    position: fixed;
-    top: 270px;
+    margin: auto auto auto 15px;
+    
 }
 
 .generate {
+   width: 100%;
    
 }
 
 .to-do-section {
-    background-image: "./images/stickynote.jpg";
+    
+    background-color: #ffc;
+    height: 170px;
+    width: 100%;
 }
 
 #todo {
     background-color: #ffc;
     font-family: 'Yusei Magic', sans-serif;
-    position: absolute;
+    margin: 5px auto auto auto;
+    
 }
+
+.sticky-note-img {
+    float: left;
+    height: 35px;
+    width: 35px;
+    
+}
+
+.btn {
+    border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  background: #5da4cd;
+  padding: 5px 10px 5px 10px;
+  margin: 20px auto;
+  border: solid #e4d0d5 2px;
+  text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #6abae6;
+    text-decoration: none;
+  }
