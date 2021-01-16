@@ -35,8 +35,8 @@ p {
     font-family: 'Yusei Magic', sans-serif;
 }
 
-input {
-    border-color: #e4d0d5;
+input:focus {
+    border-colour: #e4d0d5;
 }
 
 /* CLASS SELECTORS */
