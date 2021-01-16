@@ -13,7 +13,7 @@ function fireContentScript() {
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("checkboxImg").addEventListener('click', checkCheckbox)
-    document.getElementById('button').addEventListener("click", addImages)
+    // document.getElementById('button').addEventListener("click", addImages)
     document.getElementById("buttonPreference").addEventListener("click", openForm)
 })
 
@@ -27,24 +27,24 @@ const quotes_i = Math.floor(Math.random() * quotes.length);
 document.getElementById("quote").innerHTML = quotes[quotes_i];
 
 
-function addImages() {
-    var url = "https://source.unsplash.com/150x150?";
-    // var img = document.createElement("img");
-    // img.src = url;
-    // document.body.appendChild(img);
-    var input = document.getElementById("forPhoto").value;
-    console.log(input);
+// function addImages() {
+//     var url = "https://source.unsplash.com/150x150?";
+//     // var img = document.createElement("img");
+//     // img.src = url;
+//     // document.body.appendChild(img);
+//     var input = document.getElementById("forPhoto").value;
+//     console.log(input);
 
-    console.log(url+input)
+//     console.log(url+input)
     
 
-    var imgSrc = url + input;
+//     var imgSrc = url + input;
     
 
-    let img = document.getElementById('newPhoto');
+//     let img = document.getElementById('newPhoto');
 
-    img.src = imgSrc;
-}
+//     img.src = imgSrc;
+// }
 
 document.body.onload = function() {
     chrome.storage.sync.get("userCheckbox", function(items) {
