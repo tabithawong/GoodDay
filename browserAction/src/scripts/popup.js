@@ -11,7 +11,7 @@ function fireContentScript() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('fireContentScript').addEventListener("click", fireContentScript)
+  
     document.getElementById('button').addEventListener("click", addImages)
 })
 
