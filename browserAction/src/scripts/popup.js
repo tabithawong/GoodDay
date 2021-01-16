@@ -117,36 +117,19 @@ document.body.onload = function() {
     
         const numbers = [0, 1, 2, 3, 4];
   
-        console.log(numbers)
+        // Getting random numbers
         const positionNum = Math.floor(Math.random() * numbers.length)
         const randomNum = numbers[positionNum];
-        //quotes[quotes_i];
         numbers.splice(positionNum, 1)
-        console.log(numbers)
-
-
+   
         const postitionNum1 = Math.floor(Math.random() * numbers.length);
         const randomNum1 = numbers[postitionNum1];
-        // numbers.remove(randomNum1);
-        // delete numbers[randomNum1]
         numbers.splice(postitionNum1, 1)
-        console.log(numbers)
-
 
         const positionNum2 = Math.floor(Math.random() * numbers.length)
         const randomNum2 = numbers[positionNum2];
         numbers.splice(positionNum2, 1);
-        // // numbers.remove(randomNum2);
-        // delete numbers[randomNum2]
-        console.log(numbers);
-        
-        console.log(positionNum);
-        console.log(postitionNum1);
-        console.log(positionNum2);
 
-        // const randomNum = Math.floor(Math.random() * 5) + 1;
-        // const randomNum1 = Math.floor(Math.random() * 5) + 1;
-        // const randomNum2 = Math.floor(Math.random() * 5) + 1;
         if (userPreference.length == 3) {
      
            
