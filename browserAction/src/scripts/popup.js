@@ -16,7 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('button').addEventListener("click", addImages)
 })
 
+function getRandomInt(){
+    return Math.floor(Math.random() * Math.floor(max)); 
+}
 
+function changeQuote() {
+    if (!document.getElementById) return;
+    var quotes = ["Enjoy the little things!", "You can & you will", "Drink some water!", "Go grab a snack!", "Send a text to a friend!",
+        "Rest your eyes for 10 seconds!", "Go for a walk and enjoy some sunlight!", "Today's a good day! :)", "Listen to your favourite song!", "Take a break from the screen!"];
+    var newquote = quotes[getRandomInt(9)];
+    var quote = document.getElementById("quote");
+    quote.firstChild.nodeValue=newquote;
+
+}
 
 function addImages() {
     var url = "https://source.unsplash.com/150x150?";
