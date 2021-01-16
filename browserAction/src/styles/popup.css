@@ -8,6 +8,10 @@ h1 {
     color: #5DCDC9;
     font-weight: lighter;
     font-family: 'Pacifico', cursive;
+    padding: 3px;
+    border-color: #eca0b6;
+    border-style: dashed;
+    border-radius: 5px;
     text-align: center;
 }
 
