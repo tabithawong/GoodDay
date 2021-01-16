@@ -54,7 +54,6 @@ body {
 
 input {
     border: transparent;
-    background-color: #ffc;
 }
 
 li:hover {
@@ -69,8 +68,4 @@ ul {
 
 .generate {
    
-}
-
-.todo{
-    position: relative;
 }
