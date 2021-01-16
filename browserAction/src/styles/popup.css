@@ -40,3 +40,8 @@ body {
 li:hover {
     text-decoration: line-through;
   }
+
+
+ul {
+    text-align: left;
+}
