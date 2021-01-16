@@ -67,9 +67,17 @@ li:hover {
 
 ul {
     text-align: left;
-    position: absolute;
+    position: fixed;
+    top: 270px;
 }
 
 .generate {
    
+}
+
+#todo {
+    background-color: #ffc;
+    position: absolute;
+    top: 250px;
+    left: 90px;
 }
