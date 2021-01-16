@@ -11,7 +11,6 @@ function fireContentScript() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('clickMe').addEventListener("click", isFrogHidden)
     document.getElementById('fireContentScript').addEventListener("click", fireContentScript)
     document.getElementById('button').addEventListener("click", addImages)
     document.getElementBtId('qbutton').addEventListener("click", changeQuote)
@@ -48,6 +47,21 @@ function addImages() {
 
     img.src = imgSrc;
 }
+
+
+    var checkboxes = document.querySelectorAll("input[type=checkbox][name=settings]");
+    let enabledSettings = []
+    
+    checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+          enabledSettings = 
+            Array.from(checkboxes) // Convert checkboxes to an array to use filter and map.
+            .filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.
+            .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
+            
+          console.log(enabledSettings)
+        })
+      });
 
 function newItem() {
     var item = document.getElementById("input").value;
