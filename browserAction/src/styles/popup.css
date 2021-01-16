@@ -1,7 +1,15 @@
+/* TAG SELECTORS */
 body {
-    background-color: d3f6f3;
+    background-color: #d7fffd;
 }
 
+h1 {
+    text-align: right;
+}
+
+/* CLASS SELECTORS */
+
+/* ID SELECTORS */
 #app {
     width: 200px;
 }
