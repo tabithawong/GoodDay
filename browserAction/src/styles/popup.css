@@ -35,6 +35,10 @@ p {
     font-family: 'Yusei Magic', sans-serif;
 }
 
+input {
+    border-color: #e4d0d5;
+}
+
 /* CLASS SELECTORS */
 
 /* ID SELECTORS */
