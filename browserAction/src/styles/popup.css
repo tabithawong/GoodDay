@@ -31,12 +31,16 @@ hr {
     width: 25%;
 }
 
+label {
+    font-family: 'Yusei Magic', sans-serif;
+}
+
 p {
     font-family: 'Yusei Magic', sans-serif;
 }
 
 input:focus {
-    border-colour: #e4d0d5;
+    border-color: #e4d0d5;
 }
 
 /* CLASS SELECTORS */
@@ -77,6 +81,7 @@ ul {
 
 #todo {
     background-color: #ffc;
+    font-family: 'Yusei Magic', sans-serif;
     position: fixed;
     top: 250px;
     left: 90px;
