@@ -72,8 +72,7 @@ function addImages() {
             img1.src = "./images/frog.jpg"
         //   });
     }
-   
-
+    
 function newItem() {
     var item = document.getElementById("input").value;
     var ul = document.getElementById("list");
