@@ -27,7 +27,12 @@ hr {
     border-color: #e4d0d5;
     border-style: dotted none none none;
     border-width: 7px;
+    margin-bottom: 20px;
     width: 25%;
+}
+
+p {
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 /* CLASS SELECTORS */
@@ -60,6 +65,10 @@ li:hover {
 ul {
     text-align: left;
     position: absolute;
+}
+
+.generate {
+   
 }
 
 .todo{
