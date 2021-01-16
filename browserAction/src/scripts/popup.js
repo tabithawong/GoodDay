@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('clickMe').addEventListener("click", isFrogHidden)
     document.getElementById('fireContentScript').addEventListener("click", fireContentScript)
     document.getElementById('button').addEventListener("click", addImages)
+    document.getElementBtId('qbutton').addEventListener("click", changeQuote)
 })
 
 function getRandomInt(){
@@ -27,7 +28,6 @@ function changeQuote() {
     var newquote = quotes[getRandomInt(9)];
     var quote = document.getElementById("quote");
     quote.firstChild.nodeValue=newquote;
-
 }
 
 function addImages() {
