@@ -66,6 +66,17 @@ function addImages() {
                 .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
                 
               console.log(enabledSettings)
+            const img1 = document.getElementById("checkboxImg1");
+            const img2 = document.getElementById("checkboxImg2");
+            const img3 = document.getElementById("checkboxImg3");
+
+            if (enabledSettings.includes("nature")) {
+                console.log("This is working")
+            } else if (enabledSettings.includes("animals")) {
+                console.log("this is animals")
+            }
+
+            img1.src = "./images/frog.jpg"
         //   });
     }
    
