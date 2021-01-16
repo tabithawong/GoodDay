@@ -10,6 +10,7 @@ function fireContentScript() {
     })
 }
 
+<<<<<<< Updated upstream
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("checkboxImg").addEventListener('click', checkCheckbox)
 function getRandomInt() {
@@ -25,6 +26,8 @@ function changeQuote() {
     quote.value=newquote; 
 }
 
+=======
+>>>>>>> Stashed changes
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('clickMe').addEventListener("click", isFrogHidden)
     document.getElementById('fireContentScript').addEventListener("click", fireContentScript)
