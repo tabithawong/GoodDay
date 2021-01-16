@@ -10,8 +10,6 @@ function fireContentScript() {
     })
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    
 function getRandomInt() {
     return Math.floor(Math.random() * Math.floor(max)); 
   }
