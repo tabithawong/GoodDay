@@ -115,7 +115,7 @@ document.body.onload = function() {
 
         console.log(userPreference + "this is it")
     
-        const numbers = [0, 1, 2, 3, 4];
+        const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   
         // Getting random numbers
         const positionNum = Math.floor(Math.random() * numbers.length)
