@@ -71,6 +71,11 @@ document.body.onload = function() {
             document.getElementById("buttonPreference").style.display = "block";
         }
     })
+
+    chrome.storage.sync.get("userNotes", function(items) {
+        console.log(items);
+        generateNotes(items.userNotes);
+    })
   }
 
   function openForm() {
@@ -170,24 +175,79 @@ document.body.onload = function() {
 
     }
 
+    var notesList = []
 
 function newItem() {
     var item = document.getElementById("todo").value;
+    notesList.push(item);
+    console.log(notesList)
     var ul = document.getElementById("list");
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(item));
     ul.appendChild(li);
     document.getElementById("todo").value = ""; 
-    li.onclick = removeItem; 
+    li.onclick = removeItem;
+
 }
 
 document.body.onkeyup = function(e) {
   if (e.keyCode == 13) {
     console.log("enter clicked!");
     newItem();
+
+//   const bulletPoints = document.getElementById("list")
+//   console.log(bulletPoints);
+//   chrome.storage.sync.set({'userNotes': notesList}, function() {
+//     // Notify that we saved.
+//     console.log('Notes saved');
+//     console.log(notesList)
+//   });
   }
+  console.log(notesList)
+  chrome.storage.sync.set({'userNotes': notesList}, function() {
+    // Notify that we saved.
+    console.log('Notes saved');
+    console.log(notesList)
+  });
 };
+
+
+document.getElementById("list").addEventListener('click', removeItem)
+
+
+function generateNotes(notes) {
+    var ul = document.getElementById("list");
+    console.log(notes)
+
+    notes.map(note => {
+        var li = document.createElement("li");
+        li.innerHTML = note
+        // li.appendChild(document.createTextNode(note))
+        ul.appendChild(li);
+
+        notesList.unshift(note);
+        console.log(notesList)
+    })
+
+    // li.appendChild(document.createTextNode(item))
+    // li.appendChild(document.createTextNode(item));
+    // ul.appendChild(li);
+
+}
 
 function removeItem(e) {
     e.target.remove()
+    notesList.splice(e.target.value, 1)
+    console.log(notesList);
+    
   }
+
+
+//   document.body.onbeforeunload = function() {
+//     // chrome.storage.sync.set({'userNotes': notesList}, function() {
+//     //     // Notify that we saved.
+//     //     console.log('Notes saved');
+//     //     console.log(notesList)
+//     //   });
+//   }
+    
