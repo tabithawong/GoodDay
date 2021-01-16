@@ -77,7 +77,7 @@ ul {
 
 #todo {
     background-color: #ffc;
-    position: absolute;
+    position: fixed;
     top: 250px;
     left: 90px;
 }
