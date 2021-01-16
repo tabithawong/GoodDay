@@ -5,14 +5,15 @@ body {
 }
 
 h1 {
-    color: #5DCDC9;
-    font-weight: lighter;
-    font-family: 'Pacifico', cursive;
-    padding: 3px;
     border-color: #e4d0d5;
     border-style: dashed;
     border-radius: 7px;
     border-width: 3px;
+    color: #5DCDC9;
+    font-weight: lighter;
+    font-family: 'Pacifico', cursive;
+    margin-top: 10%;
+    padding: 3px;
     text-align: center;
 }
 
