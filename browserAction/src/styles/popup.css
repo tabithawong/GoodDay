@@ -24,8 +24,10 @@ h2 {
 }
 
 hr {
+    border-color: #e4d0d5;
     border-style: dotted none none none;
     border-width: 7px;
+    width: 25%;
 }
 
 /* CLASS SELECTORS */
