@@ -5,6 +5,7 @@ body {
 
 h1 {
     color: #5DCDC9;
+    font-weight: lighter;
     font-family: 'Pacifico', cursive;
     text-align: right;
 }
