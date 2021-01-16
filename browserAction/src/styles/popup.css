@@ -1,6 +1,6 @@
 /* TAG SELECTORS */
 body {
-    background-color: #d7fffd;
+    background-color: #e0f8ff;
     text-align: center;
 }
 
@@ -9,7 +9,7 @@ h1 {
     border-style: dashed;
     border-radius: 7px;
     border-width: 3px;
-    color: #5DCDC9;
+    color: #5da4cd;
     font-weight: lighter;
     font-family: 'Pacifico', cursive;
     margin-top: 15%;
@@ -18,17 +18,9 @@ h1 {
 }
 
 h2 {
-    color: #5DCDC9;
+    color: #5da4cd;
     font-weight: lighter;
     font-family: 'Yusei Magic', sans-serif;
-}
-
-hr {
-    border-style: dotted none none none;
-    border-width: 7px;
-    color: #e4d0d5;
-    margin-bottom: 20px;
-    width: 20%;
 }
 
 /* CLASS SELECTORS */
@@ -40,9 +32,6 @@ hr {
     margin: auto;
 }
 
-#frog {
-    display: none;
-}
 
 a { font-size: 1.4em; }
 
