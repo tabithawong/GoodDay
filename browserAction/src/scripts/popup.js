@@ -10,9 +10,24 @@ function fireContentScript() {
     })
 }
 
+function getRandomInt() {
+    return Math.floor(Math.random() * Math.floor(max)); 
+  }
+  
+function changeQuote() {
+    if (!document.getElementById) return;
+    var quotes = ["Enjoy the little things!", "You can & you will", "Drink some water!", "Go grab a snack!", "Send a text to a friend!",
+        "Rest your eyes for 10 seconds!", "Go for a walk and enjoy some sunlight!", "Today's a good day! :)", "Listen to your favourite song!", "Take a break from the screen!"];
+    var newquote = quotes[getRandomInt(9)];
+    var quote = document.getElementById("quote");
+    quote.firstChild.nodeValue=newquote;
+    }
+
 document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('clickMe').addEventListener("click", isFrogHidden)
     document.getElementById('fireContentScript').addEventListener("click", fireContentScript)
     document.getElementById('button').addEventListener("click", addImages)
+    document.getElementById('qbutton').addEventListener("click", changeQuote)
 })
 
 
@@ -34,21 +49,6 @@ function addImages() {
 
     img.src = imgSrc;
 }
-
-
-    var checkboxes = document.querySelectorAll("input[type=checkbox][name=settings]");
-    let enabledSettings = []
-    
-    checkboxes.forEach(function(checkbox) {
-        checkbox.addEventListener('change', function() {
-          enabledSettings = 
-            Array.from(checkboxes) // Convert checkboxes to an array to use filter and map.
-            .filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.
-            .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
-            
-          console.log(enabledSettings)
-        })
-      });
 
 function newItem() {
     var item = document.getElementById("input").value;
