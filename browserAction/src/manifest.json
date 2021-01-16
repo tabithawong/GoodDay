@@ -4,8 +4,8 @@
   "manifest_version": 2,
   "description": "A Browser Action Extension",
   "icons": {
-    "16": "icons/icon-16.png",
-    "128": "icons/icon-128.png"
+    "16": "icons/htn-16.png",
+    "128": "icons/htn-128.png"
   },
   "background": {
     "page": "background.html"
@@ -32,8 +32,8 @@
   }],
   "browser_action": {
     "default_icon": {
-      "19": "icons/icon-16.png",
-      "38": "icons/icon-32.png"
+      "19": "icons/htn-16.png",
+      "38": "icons/htn-32.png"
     },
     "default_title": "Type A Chrome Extension Boilerplate",
     "default_popup": "popup.html"
