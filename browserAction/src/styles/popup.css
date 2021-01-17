@@ -49,7 +49,6 @@ input:focus {
 
 #app {
     width: 200px;
-    padding-bottom: 30px;
     margin: auto;
 }
 
@@ -119,8 +118,4 @@ ul {
   .btn:hover {
     background: #6abae6;
     text-decoration: none;
-  }
-
-  #checkboxImg3 {
-      margin-bottom: 30px;
   }
