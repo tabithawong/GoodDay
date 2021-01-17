@@ -50,6 +50,7 @@ input:focus {
 #app {
     width: 200px;
     margin: auto;
+    padding-bottom: 30px;
 }
 
 
@@ -104,7 +105,7 @@ ul {
 }
 
 .btn {
-    border-radius: 10px;
+  border-radius: 10px;
   font-family: Arial;
   color: #ffffff;
   font-size: 12px;
