@@ -1,5 +1,6 @@
 # GoodDay
 GoodDay is a Chrome extension that wants you to have a GoodDay!
+(https://gooddays.tech)
 
 ## Installation:
 1. Clone this repository or download it by selecting the "Download as a ZIP file" option from the green "Code" button above
