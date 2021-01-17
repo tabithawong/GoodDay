@@ -272,7 +272,7 @@ blockquote {
 }
 
 #bottom {
-  padding: 220px 0px;
+  padding: 50px 0px;
   background: #f4f4f4;
   overflow-y: hidden;
 }
@@ -423,5 +423,8 @@ footer {
 }
 
 .header-img {
+  margin-top: 5%;
+}
+.download-btn {
   margin-top: 5%;
 }
