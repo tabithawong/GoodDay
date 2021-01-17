@@ -413,3 +413,8 @@ footer {
 
 }   
 
+
+
+.rounded-circle {
+  border-radius: 50%;
+}
