@@ -52,7 +52,7 @@ document.body.onload = function() {
             console.log("sorry bud")
         }
         // console.log(items);
-        document.getElementById("data").innerText = items.data;
+        // document.getElementById("data").innerText = items.data;
 
       }
     });
