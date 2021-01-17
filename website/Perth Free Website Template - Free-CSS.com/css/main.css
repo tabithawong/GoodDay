@@ -222,7 +222,7 @@ p {
 
 
 .header-text {
-  padding-top: 175px;
+  padding-top: 100px;
 } 
    
 .header-img {
@@ -420,4 +420,8 @@ footer {
 }
 .avatar-name {
   font-size: 3rem;
+}
+
+.header-img {
+  margin-top: 5%;
 }
