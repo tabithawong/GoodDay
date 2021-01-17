@@ -12,6 +12,7 @@
    ========================================================================== */
 h1 {
   font-family: 'Pacifico', cursive;
+  margin-bottom: 50px;
 }
 
 h2, h3, p, .navbar-nav {
@@ -38,6 +39,7 @@ h3 {
   font-size: 30px;
   font-weight: 300;
   color: #ffffff;
+  line-height: 0.8;
 }
 
 p {
