@@ -2,7 +2,7 @@
   "name": "GoodDay",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "A Browser Action Extension",
+  "description": "A self-care browser extension",
   "icons": {
     "16": "icons/htn-16.png",
     "128": "icons/htn-128.png"
@@ -35,7 +35,7 @@
       "19": "icons/htn-16.png",
       "38": "icons/htn-32.png"
     },
-    "default_title": "Type A Chrome Extension Boilerplate",
+    "default_title": "GoodDay",
     "default_popup": "popup.html"
   }
 }
