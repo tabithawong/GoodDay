@@ -227,7 +227,7 @@ p {
   margin-top: -100px;
 }   
    
-#main1 {
+#about {
   background: #f4f4f4;
   padding-top: 140px;
   min-height: 650px;
@@ -250,7 +250,7 @@ blockquote {
     padding: 0px 20px;
 }
 
-#main2 {
+#features {
   background: #ffffff;
   padding-top: 140px;
   height: 650px;
@@ -264,7 +264,7 @@ blockquote {
     position: absolute;
 }
 
-#message {
+#team {
   padding: 100px 0px;
   background: #13c4af;
 }
