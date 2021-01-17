@@ -257,7 +257,8 @@ blockquote {
 
 #features {
   background: #ffffff;
-  padding-top: 140px;
+  /* padding-top: 140px; */
+  margin: 100px;
   height: 650px;
   overflow: hidden;
 }
