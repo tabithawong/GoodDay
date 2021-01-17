@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("checkboxImg").addEventListener('click', checkCheckbox)
     // document.getElementById('button').addEventListener("click", addImages)
     document.getElementById("buttonPreference").addEventListener("click", openForm)
+    document.getElementById("list").addEventListener('click', removeItem)
 })
 
 // array of quotes
@@ -178,6 +179,8 @@ function newItem() {
     var ul = document.getElementById("list");
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(item));
+    li.classList.add("note")
+
     ul.appendChild(li);
     document.getElementById("todo").value = ""; 
     li.onclick = removeItem;
@@ -206,7 +209,7 @@ document.body.onkeyup = function(e) {
 };
 
 
-document.getElementById("list").addEventListener('click', removeItem)
+
 
 
 function generateNotes(notes) {
@@ -218,6 +221,8 @@ function generateNotes(notes) {
         li.innerHTML = note
         // li.appendChild(document.createTextNode(note))
         ul.appendChild(li);
+        li.classList.add("note")
+
 
         notesList.unshift(note);
         console.log(notesList)
@@ -233,15 +238,28 @@ function removeItem(e) {
     e.target.remove()
     notesList.splice(e.target.value, 1)
     console.log(notesList);
-    
+   
+    chrome.storage.sync.set({'userNotes': notesList}, function() {
+        // Notify that we saved.
+        console.log('Notes saved');
+        console.log(notesList)
+      });
   }
 
+// var finalNotes = [];
+// console.log(document.querySelectorAll("note"))
+// var links = document.getElementsByClassName("note");
+// // var values = [].map.call(links, function (el) {
+// //   return el.getAttribute("videofile");
+// // });
+// console.log("links" + links[0])
+// console.log(document.querySelectorAll(".note") +" what is this")
+// document.body.beforeunload
 
-//   document.body.onbeforeunload = function() {
-//     // chrome.storage.sync.set({'userNotes': notesList}, function() {
-//     //     // Notify that we saved.
-//     //     console.log('Notes saved');
-//     //     console.log(notesList)
-//     //   });
+// window.onunload = function() {
+//       finalNotes.map(note => {
+
+//       })
+    
 //   }
     
