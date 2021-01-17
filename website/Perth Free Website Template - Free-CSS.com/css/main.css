@@ -416,3 +416,6 @@ footer {
 .rounded-circle {
   border-radius: 50%;
 }
+.avatar-name {
+  font-size: 3rem;
+}
