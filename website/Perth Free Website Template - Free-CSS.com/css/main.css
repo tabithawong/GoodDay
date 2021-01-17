@@ -143,7 +143,9 @@ p {
     transition: all 0.35s ease-in-out;
 }
 
-
+.wrapper {
+  text-align: center;
+}
 /*-------------------Colors----------------*/
 .dark-gray {
   color: #545454;
