@@ -2,7 +2,7 @@
 GoodDay is a Chrome extension that wants you to have a GoodDay!
 
 ## Installation:
-1. Clone this repository
+1. Clone this repository or download it by selecting the "Download as a ZIP file" option from the green "Code" button above
 2. Go to chrome://extensions/
 3. Make sure developer mode is on
 4. Click load unpacked, find the repository folder, select browserAction, then select the src/ folder
