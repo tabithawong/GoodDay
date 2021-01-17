@@ -274,7 +274,8 @@ blockquote {
 
 #team {
   padding: 100px 0px;
-  background: #8ad4ff;
+  /* background: #8ad4ff; */
+  background: #4eacdd;
 }
 
 #bottom {
@@ -426,6 +427,8 @@ footer {
 }
 .avatar-name {
   font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px #817a7a;
 }
 
 .header-img {
